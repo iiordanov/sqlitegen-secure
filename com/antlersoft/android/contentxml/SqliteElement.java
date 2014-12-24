@@ -13,7 +13,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
+import net.sqlcipher.database.SQLiteDatabase;
 import android.util.Xml;
 
 import org.xml.sax.Attributes;

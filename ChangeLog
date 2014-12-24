@@ -1,3 +1,7 @@
+--contentxml 0.1.1, 0.1.19, 0.1.6
+
+Replaced sqlite implementation with sqlcipher.
+
 --contentxml 0.1.1, 0.1.18, 0.1.6
 
 Storing db contents actually works now.

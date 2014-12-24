@@ -1,3 +1,10 @@
+sqlitegen 0.1.19
+
+Replaced sqlite implementation with sqlcipher.
+
+This introduces a dependency on sqlcipher for 256-bit AES encryption:
+https://www.zetetic.net/sqlcipher/open-source/
+
 sqlitegen 0.1.15
 
 Generate files in gen directory if available, to match R.java

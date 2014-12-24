@@ -10,6 +10,12 @@ Requires ant 1.6+
 	<target name="android.db.jar" depends="buildcommon">
 		<mkdir dir="dist"/>
 		<javac source="${sqlitegen.source}" target="${sqlitegen.target}" sourcepath="." classpath="${android.sdk.lib}" destdir="classes">
+                        <classpath>
+                          <pathelement path="${classpath}"/>
+                          <fileset dir="${sqlcipher.path}">
+                            <include name="**/*.jar"/>
+                          </fileset>
+                        </classpath>
 			<src path="com/antlersoft/android/dbimpl"/>
 		</javac>
 		<jar destfile="dist/com.antlersoft.android.db_${android.db.version}.jar" basedir="classes"
@@ -19,6 +25,12 @@ Requires ant 1.6+
 	<target name="android.contentxml.jar" depends="buildcommon">
 		<mkdir dir="dist"/>
 		<javac source="${sqlitegen.source}" target="${sqlitegen.target}" sourcepath="." classpath="${android.sdk.lib}" destdir="classes">
+                        <classpath>
+                          <pathelement path="${classpath}"/>
+                          <fileset dir="${sqlcipher.path}">
+                            <include name="**/*.jar"/>
+                          </fileset>
+                        </classpath>
 			<src path="com/antlersoft/android/contentxml"/>
 		</javac>
 		<jar destfile="dist/com.antlersoft.android.contentxml_${android.contentxml.version}.jar" basedir="classes"

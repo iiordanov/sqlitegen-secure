@@ -2,7 +2,7 @@
 <feature
       id="com.antlersoft.sqlitegen"
       label="Android SQLite Code Generator"
-      version="7.007.007"
+      version="0.1.19"
       provider-name="antlersoft">
 
    <description url="http://code.google.com/p/sqlitegen/">
@@ -314,6 +314,6 @@ POSSIBILITY OF SUCH DAMAGES.
          id="com.antlersoft.sqlitegen.SQLiteGen"
          download-size="0"
          install-size="0"
-         version="7.007.007"/>
+         version="0.1.19"/>
 
 </feature>
